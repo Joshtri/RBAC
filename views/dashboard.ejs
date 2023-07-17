@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, <%= username %>!</h1>
+    <h2>Admin Features:</h2>
+    <ul>
+        <li>Feature 1</li>
+        <% if (role === 'user') { %>
+            <li>Feature 2</li>
+        <% } %>
+        <li>Feature 3</li>
+        <% if (role === 'admin') { %>
+            <li>Feature 4</li>
+        <% } %>
+    </ul>
+    <a href="/logout">Logout</a>
+</body>
+</html>
